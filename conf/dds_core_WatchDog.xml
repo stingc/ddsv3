@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>WatchDogApp</name>
+    <rank>8081</rank>
+    <factory>Utility</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.maverse.dds.util.watchdog.EntryPoint_FDRWatchDog, DDSApp_FDRWatchDog" is_singleton="1">
+      <property name="$IncludeChildren" value="" />
+    </code>
+  </application>
+  <database>
+    <item enabled="0">
+      <id>StatusManager</id>
+      <account>aptest</account>
+      <password>
+      </password>
+      <url>Data Source=ORCL;Persist Security Info=True;Pooling=False</url>
+      <params>
+        <item action="add" key="refresh_sec" value="10" />
+      </params>
+    </item>
+  </database>
+  <global_params>
+    <!-- WatchDogApp basic -->
+    <item action="add" key="CONFIG.IsProcessKilledAfterClose" value="1" />
+    <item action="add" key="CONFIG.DeadProcessFailedCount" value="10" />
+    <item action="add" key="CONFIG.CheckPeriodInSecond" value="1" />
+    <!-- 先關閉 watchdog, 等待參數指定後再啟動 watchdog -->
+    <item action="add" key="CONFIG.AutoDetect" value="1" />
+    <!-- 執行時收到設定 ; 並啟動 watchdog -->
+    <item action="add" key="CONFIG.WatchedProgram.Arguments" value="http://127.0.0.1:8080/IFacePlusPlus_Face_API/MetaData" />
+    <item action="add" key="CONFIG.WatchedProgram.Path" value="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\WcfTestClient.exe" />
+    <!-- system -->
+    <item action="add" key="IsDebug" value="1" />
+  </global_params>
+  <usage>
+  	xxx
+  </usage>
+</dds_core>

@@ -1,0 +1,66 @@
+[Message]
+
+
+
+[AppDomain]
+CommonLibrary.DLL_v2.0.50727 : CommonLibrary.DLL, C:\Users\13790\Desktop\DDSV3_bin\lib\CommonLibrary.dll, C:\Users\13790\Desktop\DDSV3_bin\lib, v2.0.50727, 2010/10/16 上午 06:40:50
+DDSCore.exe_v4.0.30319 : DDSCore.exe, C:\Users\13790\Desktop\DDSV3_bin\DDSCore.exe, C:\Users\13790\Desktop\DDSV3_bin, v4.0.30319, 2017/12/23 上午 08:08:11
+Lib_DCIDrawPack.DLL_v4.0.30319 : Lib_DCIDrawPack.DLL, C:\Users\13790\Desktop\DDSV3_bin\lib\Lib_DCIDrawPack.dll, C:\Users\13790\Desktop\DDSV3_bin\lib, v4.0.30319, 2017/10/21 上午 09:31:30
+Lib_DDSCommon.DLL_v4.0.30319 : Lib_DDSCommon.DLL, C:\Users\13790\Desktop\DDSV3_bin\bin\Lib_DDSCommon.dll, C:\Users\13790\Desktop\DDSV3_bin\bin, v4.0.30319, 2017/12/12 下午 10:02:24
+mscorlib.dll_v4.0.30319 : mscorlib.dll, C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorlib.dll, C:\Windows\Microsoft.NET\Framework64\v4.0.30319, v4.0.30319, 2017/8/29 下午 10:56:16
+mscorlib.resources.dll_v4.0.30319 : mscorlib.resources.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\mscorlib.resources.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089, v4.0.30319, 2015/11/5 下午 10:25:32
+Spring.Core.DLL_v4.0.30319 : Spring.Core.DLL, C:\Users\13790\Desktop\DDSV3_bin\bin\Spring.Core.dll, C:\Users\13790\Desktop\DDSV3_bin\bin, v4.0.30319, 2017/9/9 下午 03:34:10
+System.Configuration.dll_v4.0.30319 : System.Configuration.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a, v4.0.30319, 2017/3/26 下午 08:33:36
+System.Core.dll_v4.0.30319 : System.Core.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089, v4.0.30319, 2017/8/29 下午 11:04:22
+System.dll_v4.0.30319 : System.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089, v4.0.30319, 2017/8/29 下午 11:04:22
+System.Drawing.dll_v4.0.30319 : System.Drawing.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a, v4.0.30319, 2017/8/29 下午 11:04:22
+System.resources.dll_v4.0.30319 : System.resources.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\System.resources.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089, v4.0.30319, 2015/11/5 下午 10:25:32
+System.ServiceProcess.dll_v4.0.30319 : System.ServiceProcess.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceProcess\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.ServiceProcess.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceProcess\v4.0_4.0.0.0__b03f5f7f11d50a3a, v4.0.30319, 2017/3/26 下午 08:33:36
+System.Windows.Forms.dll_v4.0.30319 : System.Windows.Forms.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089, v4.0.30319, 2017/8/29 下午 11:04:22
+System.Xml.dll_v4.0.30319 : System.Xml.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll, C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089, v4.0.30319, 2017/8/29 下午 11:04:22
+
+
+[Env_System]
+ComSpec : C:\Windows\system32\cmd.exe
+DOTNET_REACTOR : C:\Program Files (x86)\Eziriz\.NET Reactor
+FP_NO_HOST_CHECK : NO
+NUMBER_OF_PROCESSORS : 2
+OS : Windows_NT
+Path : C:\Program Files (x86)\Eziriz\.NET Reactor;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\13790\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\
+PATHEXT : .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PROCESSOR_ARCHITECTURE : AMD64
+PROCESSOR_IDENTIFIER : Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+PROCESSOR_LEVEL : 6
+PROCESSOR_REVISION : 170a
+PSModulePath : C:\Windows\system32\WindowsPowerShell\v1.0\Modules\
+TEMP : C:\Windows\TEMP
+TMP : C:\Windows\TEMP
+USERNAME : SYSTEM
+VS140COMNTOOLS : C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\Tools\
+windir : C:\Windows
+windows_tracing_flags : 3
+windows_tracing_logfile : C:\BVTBin\Tests\installpackage\csilogfile.log
+
+
+[Env_User]
+PATH : C:\Program Files (x86)\Eziriz\.NET Reactor;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files (x86)\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\nodejs\;C:\Users\13790\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\GitServer21512\cmd
+TEMP : C:\Users\13790\AppData\Local\Temp
+TMP : C:\Users\13790\AppData\Local\Temp
+
+
+[MachineInfo]
+CommandLine : ddscore
+Current Directory : C:\Users\13790\Desktop\DDSV3_bin
+Domain : FOXERA
+Machine Name : FOXERA-B06
+Memory : 62599168
+OS Version Platform : Win32NT
+OS Version ServicePack : Service Pack 1
+OS Version Version : 6.1.7601.65536
+OS Version VersionString : Microsoft Windows NT 6.1.7601 Service Pack 1
+ProcessorCount : 2
+System Directory : C:\Windows\system32
+User Name : 13790
+Version : 4.0.30319.42000
+
+

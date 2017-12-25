@@ -1,0 +1,596 @@
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=SFC01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 14-10月-2010 13:16:46
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=SFC01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 14-10月-2010 13:21:38
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:22:33
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:23:20
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:23:31
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:27:04
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:27:14
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:28:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:28:15
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 15-10月-2010 17:28:24
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SID=SMP01D1)(SERVER=DEDICATED)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 24-2月 -2011 20:52:07
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SID=SMP01D1)(SERVER=DEDICATED)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.vshost.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 24-2月 -2011 20:53:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SID=SMP01D1)(SERVER=DEDICATED)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 24-2月 -2011 20:54:33
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SID=SMP01D1)(SERVER=DEDICATED)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 24-2月 -2011 20:55:10
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SID=SMP01D1)(SERVER=DEDICATED)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 24-2月 -2011 20:55:43
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-3月 -2012 16:41:39
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS:作業逾時
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 作業逾時
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12170.
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 27-7月 -2012 19:15:37
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12535
+    TNS-12535: TNS:作業逾時
+    ns secondary err code: 12560
+    nt main err code: 505
+    TNS-00505: 作業逾時
+    nt secondary err code: 60
+    nt OS err code: 0
+  Client address: <unknown>
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 08-11月-2012 10:55:59
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 08-11月-2012 10:58:10
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 08-11月-2012 10:59:03
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 08-11月-2012 10:59:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=SIDC-DCI-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 08-11月-2012 10:59:46
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 09:32:28
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 09:33:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 09:47:43
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 09:53:47
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 10:06:06
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 10:06:45
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 10:08:02
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 28-10月-2014 10:09:49
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 29-10月-2014 13:59:05
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 29-10月-2014 13:59:21
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0
+
+
+***********************************************************************
+Fatal NI connect error 12518, connecting to:
+ (DESCRIPTION=(ADDRESS=(PROTOCOL=tcp)(HOST=10.138.4.10)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=DCI01)(CID=(PROGRAM=D:\1.workspace\dotnet\03.DataDeliveryService\0.DDSCore\bin\Debug\DDSCore.exe)(HOST=GDS-13790)(USER=13790))))
+
+  VERSION INFORMATION:
+	TNS for 32-bit Windows: Version 10.2.0.1.0 - Production
+	Windows NT TCP/IP NT Protocol Adapter for 32-bit Windows: Version 10.2.0.1.0 - Production
+  Time: 29-10月-2014 14:00:09
+  Tracing not turned on.
+  Tns error struct:
+    ns main err code: 12564
+    TNS-12564: TNS:連線被拒
+    ns secondary err code: 0
+    nt main err code: 0
+    nt secondary err code: 0
+    nt OS err code: 0

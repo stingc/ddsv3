@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<socket-factory>
+	<mapping id="MAE">
+		<!-- NOTE: all services will be connected to hub, then hub will send command back to respective service -->
+		<service>		
+			<tag>#MAE</tag>
+			<version>1.1.1.1</version>
+			<encapsulation-method>NET_META</encapsulation-method>
+			<stub-classname>vs.com.maverse.pam.basic.upload.lib.MAEClientStub, PAMLibrary_UploadCommon</stub-classname>
+		</service>
+	</mapping>
+</socket-factory>

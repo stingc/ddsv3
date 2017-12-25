@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>SWFApp6</name>
+    <rank>100</rank>
+    <factory>test</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.foxconn.easbg.easbu.dci.swf.EntryPoint, DDSApp_SWF" is_singleton="0">
+      <!--property name="$IncludeChildren" value="DCIMailApp" /-->
+      <property name="ExecutionFlow" value="Init2Run(0),InitFail2Stop(0),RunDone2Stop(0),RunFail2Stop(0)" />
+      <!--property name="ExecutionFlow" value="Init2Wait(0),Wait2Run(0),RunDone2Init(0),RunFail2Stop(0),StopDone2Stop0),StopFail2Stop(0),InitFail2Init(0)" /-->
+    </code>
+  </application>
+  <file_access>
+    <drives>
+      <drive>
+        <id>Put1</id>
+        <folder>
+          <put enabled="1" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/</put>
+          <error enabled="1" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/error/</error>
+          <backup enabled="1" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/backup/</backup>
+        </folder>
+      </drive>
+      <drive>
+        <id>Get1</id>
+        <folder>
+          <get enabled="1" batch_qty="1" forced_sec="30" recursive="0" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/</get>
+          <error enabled="1" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/error/</error>
+          <backup enabled="1" file_pattern="xml">D:/DDS/file_system/FlashServer/(EQType)/Buffer_A/backup/</backup>
+        </folder>
+      </drive>
+    </drives>
+  </file_access>
+  <database>
+    <item enabled="1">
+      <id>DefaultMSSQL</id>
+      <account>
+      </account>
+      <password>
+      </password>
+      <url>Data Source=10.142.215.212;Initial Catalog=ECS;</url>
+      <provider>System.Data.SqlClient</provider>
+    </item>
+    <item enabled="1">
+      <id>Default</id>
+      <account>root</account>
+      <password>
+      </password>
+      <url>Server=127.0.0.1;Database=classicmodels;Uid=root;Pwd=isasinger;Connect Timeout=30</url>
+      <provider>MySql.Data.MySqlClient</provider>
+      <params>
+        <item action="add" key="command_timeout" value="10" />
+      </params>
+    </item>
+    <item enabled="0">
+      <id>Default</id>
+      <account>
+      </account>
+      <password>
+      </password>
+      <url>Data Source=Test.db3;Version=3;Pooling=true;FailIfMissing=false</url>
+      <provider>System.Data.SQLite</provider>
+    </item>
+    <item enabled="0">
+      <id>Default</id>
+      <account>APTEST</account>
+      <password>aptest</password>
+      <url>Server=10.148.62.84:50000;Database=CEN01T1;Pooling=false;CurrentSchema=MES1</url>
+      <provider>IBM.Data.DB2</provider>
+    </item>
+    <item enabled="0">
+      <id>sfcmail</id>
+      <!-- AP, Ap_login_10 -->
+      <factory type="vs.com.foxconn.gdsbg.easbu.dci.ped.util.MESConnection, Lib_MESConnection" method="getConnection" />
+      <params>
+        <item action="add" key="DSN" value="DCI01" />
+        <item action="add" key="IsNewForced" value="1" />
+      </params>
+    </item>
+    <item enabled="0">
+      <id>StatusManager</id>
+      <account>aptest</account>
+      <password>
+      </password>
+      <url>Data Source=ORCL;Persist Security Info=True;Pooling=False</url>
+      <params>
+        <item action="add" key="refresh_sec" value="10" />
+      </params>
+    </item>
+  </database>
+  <global_params>
+    <!-- item action="add" key="dds.product.url" value="http://10.185.40.20/mediawiki/index.php/DDS%E5%B9%B3%E5%8F%B0"/ -->
+    <item action="add" key="key1" value="5" />
+    <item action="add" key="IsServicedSQL.params.DC_IP" value="global_params['key1']" />
+    <item action="add" type="jason.DataTable" key="pm.process_list" value="{&quot;MPL&quot;:[{&quot;GroupName&quot;:&quot;Wowza&quot;,&quot;ServiceName&quot;:&quot;Wowza&quot;,&quot;InstanceID&quot;:100,&quot;FromFolder&quot;:&quot;&quot;,&quot;ToFolder&quot;:&quot;&quot;,&quot;DefaultStatus&quot;:&quot;&quot;,&quot;ExeFolder&quot;:&quot;D:/Program Files/Wowza Media Systems/Wowza Media Server/bin/&quot;,&quot;ExeName&quot;:&quot;startup.bat&quot;,&quot;MemoryLimit&quot;:&quot;1024&quot;}]}" />
+  </global_params>
+</dds_core>

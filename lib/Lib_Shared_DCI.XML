@@ -1,0 +1,2857 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Lib_Shared_DCI</name>
+    </assembly>
+    <members>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity">
+            <summary>
+            System user's information.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ISFCIdentity">
+            <summary>
+            Defines a interface for identifying users.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ISFCIdentity.setAttribute(System.String,System.Object)">
+            { AreaCode(en_US, zh_TW, zh_CN), FromAddress, RoleList(Comma-Separated) }
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.getID">
+            <summary>
+            Gets user ID.
+            </summary>
+            <returns>user ID string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.getPassword">
+            <summary>
+            Gets user's password.
+            </summary>
+            <returns>user's password string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.setAttribute(System.String,System.Object)">
+            <summary>
+            Sets the value associated with the specified key.
+            ex.{ AreaCode(en_US, zh_TW, zh_CN), FromAddress, RoleList(Comma-Separated)}.
+            </summary>
+            <param name="sKey">The key whose value to set.</param>
+            <param name="oValue">The value to set.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.getAttribute(System.String)">
+            <summary>
+            Gets the value associated with the specified key.
+            </summary>
+            <param name="sKey">The key whose value to get.</param>
+            <returns>The value associated with the specified key. If the specified key is not
+               found, attempting to get it returns null.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of SFCIdentity object.
+            </summary>
+            <param name="sID">user Id.</param>
+            <param name="sPassword">user's password.</param>
+            <param name="sAreaCode">user's AreaCode.</param>
+            <param name="sFromAddress">user's IP address.</param>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.sID">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.sPassword">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.SFCIdentity.TimeOut">
+            <summary>
+            Gets expiration  time.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.EmployeeHelper.Add(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee)">
+            <summary>
+            添加員工對象
+            </summary>
+            <param name="employee">添加對象</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.EmployeeHelper.Update(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee)">
+            <summary>
+            更新員工對象
+            </summary>
+            <param name="employee">員工對象</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.EmployeeHelper.GetList(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            <summary>
+            獲取員工列表
+            </summary>
+            <param name="ph"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.EmployeeHelper.Delete(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            <summary>
+            刪除一名員工
+            </summary>
+            <param name="ph"></param>
+            <param name="empNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.GetRankDesc(System.String)">
+            <summary>
+            get the description of the Rank;
+            </summary>
+            <param name="strRank"></param>
+            <returns></returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.BuUnicode">
+            <summary>
+            員工所屬事業處代碼
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.PlantUnicode">
+            <summary>
+            員工所屬廠區代碼
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.DepartUnicode">
+            <summary>
+            部門系統編碼
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.EmpNo">
+            <summary>
+            員工代碼
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.EmpName">
+            <summary>
+            員工姓名
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.Email">
+            <summary>
+            員工E-Mail
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.Tel">
+            <summary>
+            電話號碼
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.Appointment">
+            <summary>
+            員工職位
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.Rank">
+            <summary>
+            階層﹕范圍為01,02,03,04
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.ResignDate">
+            <summary>
+            離職時間﹐默認為空
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee.EditEmp">
+            <summary>
+            最后更新記錄員工工號
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService">
+            <summary>
+            Defines a common Interface used for operating all kinds of databases.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeUpdate(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes{ INSERT, UPDATE, DELETE } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeQuery(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes { SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>An System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeScalar(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the
+             result set returned by the query as a .NET Framework data type. Extra columns
+             or rows are ignored.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns> The first column of the first row in the result set as a .NET Framework data type, or a null reference.
+             </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.updateTable(System.String,System.Data.DataTable)">
+            <summary>
+            Inserts a datatable into DataBase.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="dt">Inserting data is stored in it</param>
+            <returns>The number of rows successfully updated from the System.Data.DataTable.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeDataReader(System.String,System.Collections.Hashtable)">
+            <summary>
+             Executes{ SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>An System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeStoreProcedure(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes StoreProcedure.
+            </summary>
+            <param name="sSPName">Storeprocedure text.</param>
+            <param name="htValues">Storeprocedure parameters.</param>
+            <returns>A hashtable containing the executing results. </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.executeReader(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes { SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>An System.Data.OracleClient.OracleDataReader object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.createUniqueToken">
+            <summary>
+            Creates an unique token.
+            </summary>
+            <returns>A new string token</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.getConnectionURL(System.String)">
+            <summary>
+            Gets current DB connection URL information.
+            </summary>
+            <param name="ConnectionURL">DB connection name.</param>
+            <returns>DB connection URL string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.getRealConfigPathname">
+            <summary>
+            Gets the real DB connection config path string.
+            </summary>
+            <returns>DB connection config path string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.startTX">
+            <summary>
+            Start a transaction at the database.
+            </summary>
+            <returns> An object representing the new transaction</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.commitTX(System.Object)">
+            <summary>
+            Commits  transaction.
+            </summary>
+            <param name="oTX">Tansaction object to be operated.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.rollbackTX(System.Object)">
+            <summary>
+            Roll back  transaction.
+            </summary>
+            <param name="oTX">Tansaction object to be operated.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.close">
+            <summary>
+             Closes the connection to the database.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.AutoCommit">
+            <summary>
+             Gets or sets transaction auto commit status,default as TRUE.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.IDBService.Connection">
+            <summary>
+            Gets or sets the database connection object.
+            </summary>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.sCONFIG_FILENAME">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.startTX">
+            Description: start transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.commitTX(System.Object)">
+            Description: commit transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.rollbackTX(System.Object)">
+            Description: undo transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.executeUpdate(System.String,System.Collections.Hashtable)">
+            Description: executing { INSERT, UPDATE, DELETE } statements
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.updateTable(System.String,System.Data.DataTable)">
+            Description: executing insert a datatable
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.executeQuery(System.String,System.Collections.Hashtable)">
+            Description: executing { SELECT } statements
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.executeScalar(System.String,System.Collections.Hashtable)">
+            Description: the first field of first recorder from recorder set, such as { SELECT }
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.executeStoreProcedure(System.String,System.Collections.Hashtable)">
+            <summary>
+            execute procedure
+            </summary>
+            <param name="sSPNAME">storeprocedure name</param>
+            <param name="ht">storeprocedure parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.close">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.createUniqueToken">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.getConnectionURL(System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.getDatabseURL(System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.#ctor">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.sConnectionURL">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.AutoCommit">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.OracleDBService.ConfigPathname">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ExecuteOption">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.ToDataTableHelper.convertIListToDataTable(System.Collections.IList)">
+            Description: Converts an IList into a datatable.
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.ToDataTableHelper.createShell(System.Type)">
+            Description: Creates a datatable with datacolumns
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.createEntityControl(System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.#ctor(System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.AddEntity(System.Object)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.UpdateEntity(System.Object,System.Object)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.DeleteEntity(System.Object)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.getEntity(System.String)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.EntityControl.deleteHQL(System.String)">
+            Description:
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.EncryptHelper">
+            <summary>
+            EncryptHelper provides method for hashing and encrypting strings.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.EncryptHelper.#ctor">
+            <summary>
+            Creates instance of EncryptHelper
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.EncryptHelper.getHashValue(System.String)">
+            <summary>
+            Hashs string uing MD5.
+            </summary>
+            <param name="sPlainPassword">string to be hashed.</param>
+            <returns>hashed string.</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.DBServiceFactory">
+            <summary>
+            Creates all kinds of DBServices which implement the Interface of IDBService. 
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.DBServiceFactory.createInstance">
+            <summary>
+            Creates a DBService object based on PublicClassName parameter in Web.config.
+            </summary>
+            <returns>Class instance which implement IDBService interface.</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider">
+            <summary>
+            Provides delegate used for creating detail InputClause.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.#ctor(System.String,vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.createInputClause,vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.SQLClauseType)">
+            <summary>
+            Initializes a new instance of the InputClauseProvider class.
+            </summary>
+            <param name="sID"></param>
+            <param name="cic"></param>
+            <param name="sqlct"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.#ctor(System.String,vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.createInputClause,vs.com.foxconn.sidc.sipd.sfc.sct.helper.DBHelper.RelationType,vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider.SQLClauseType)">
+            <summary>
+            Initializes a new instance of the InputClauseProvider class.
+            </summary>
+            <param name="sID"></param>
+            <param name="cic"></param>
+            <param name="rt"></param>
+            <param name="sqlct"></param>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager">
+            <summary>
+            Manage user input from functions resided on ToolBar control.
+            ex.{Sort,SearchBox,Filter} user controls.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.clear(System.String)">
+            <summary>
+            Removes InputCluase object with respect to Function ID, ex "Plant01".
+            </summary>
+            <param name="sFunctionID">FunctionID.</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.clearItems(System.String,System.String)" -->
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.getSQLWhere(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            Gets SQL-Where statements based on InputClause object stored in current InputCriteriaManager object.
+            ex.{SearchBox, Filter} functions.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <returns>SQL-Where statements.If the suitable InputClause object is not found, returns null.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.getSQLOrder(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            Gets SQL-Order statements based on InputClause object stored in current InputCriteriaManager object.
+            ex.{Sort} functions. 
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <returns>SQL-Order statements.If the suitable InputClause object is not found, returns null.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.getInputClause(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            <summary>
+            Gets InputClause object stored in current object according to its sID.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="sID">sID,ex{ SearchBox, SortBox, FilterBox }</param>
+            <returns>InputClause object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.addInputClauseProvider(vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClauseProvider)">
+            <summary>
+            Adds InputClauseProvider object into current InputCriteriaManager instance.
+            </summary>
+            <param name="icp">InputClauseProvider object to be added.</param>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputCriteriaManager.dicsic">
+            Description: According to specified 'sFunctionID'(ex. "Plant01"), select all matched elements and return it.
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause">
+            <summary>
+            Base class for all InputClause.
+            ex.{InputClause_Filter,InputClause_SearchBox,InputClause_Sort}.
+            </summary>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.icp">
+            <summary>
+            InputClauseProvider object which current InputClause object belongs to.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.add(vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem)">
+            <summary>
+            Adds a InputItem to current InputClause object.
+            </summary>
+            <param name="ii">InputItem object to be added.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.clear">
+            <summary>
+            Removes all elements from current InputClause object.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.removeAt(System.Int32)">
+            <summary>
+            Removes the element at the specified index of current InputClause object.
+            </summary>
+            <param name="Index">The zero-based index of the element to remove.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.moveUp(System.Int32)">
+            <summary>
+            Exchanges the position of the specified element with its former element.
+            </summary>
+            <param name="Index">The zero-based index of the element to operate.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.getSQL">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.GetEnumerator">
+            Description: implement interface IEnumerable
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.Count">
+            <summary>
+            Gets the number of elements actually contained in current InputClause object.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause.InputClauseCollection">
+            Description:
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem">
+            <summary>
+            Base class for all InputItem.
+            ex.{InputItem_Filter,InputItem_SearchBox,InputItem_Sort}.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem.getSQL">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.sReportFUN">
+            Description: 報表函數具有相關的參數描述
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.m_ote">
+            <summary>
+            權限類型選擇 
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.bindDate">
+            Description: Calendar InputBox
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.bindTime">
+            Description: Time InputBox
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.bindSelectDialog(System.String)">
+            Description: SelectDialog InputBox
+            控件狀態說明:
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.OperationModeEnum">
+            Description: 作業模式
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.SelectedModeEnum">
+            Description: 選擇模式
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.ClickCountEnum">
+            <summary>
+            Description: 點擊
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.DefaultValueModeEnum">
+            Description: 初始值模式
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.InputBox.OperationTypeEnum">
+            Description: 運行模式,  WithoutAPM:與權限無關;   UnderAPM:與權限相關;
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem">
+             <summary>
+            BDI_Edit user control's Attributes.
+             </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.IXMLAccess">
+            <summary>
+            Interface for XML loading.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.IXMLAccess.LoadFromXML(System.Xml.XmlNode)">
+            <summary>
+            loads the Xml information.
+            </summary>
+            <param name="xNode">Node to be loaded.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.IXMLAccess.ToXmlNode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.#ctor">
+            <summary>
+            Initialize a new instance of the ControlItem Class.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.HasDataSource">
+            <summary>
+            Determines whether current control has Data Source.
+            </summary>
+            <returns>If it's property value is not empty,return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.LoadFromXML(System.Xml.XmlNode)">
+            <summary>
+            loads the Xml information.
+            </summary>
+            <param name="xNode">node to be loaded.</param>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Title">
+            <summary>
+            Gets or Sets current control's description.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.ImagePath">
+            <summary>
+            Gets or Sets the ImagePath for ImageButton.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Type">
+            <summary>
+            Gets or Sets the type of current control,ex.{inputbox,TextBox,DATEBOX,DROPDOWNLIST,CHECKBOXLIST,RADIOBUTTONLIST}.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Column">
+            <summary>
+            Gets or Sets current control's Column according to current page's base page.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.SelectedMode">
+            <summary>
+            Gets or Sets current control's selectmode for inputbox.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Source">
+            <summary>
+            Gets the current control's source information.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.SourceFile">
+            <summary>
+            Gets the current control's source file information.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.SourceID">
+            <summary>
+            Gets current control's source ID information.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.DataSource">
+            <summary>
+            Gets or Sets current control's DataSource.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.DefaultValue">
+            <summary>
+            Gets or Sets current control's default value.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.ReportId">
+            <summary>
+            Gets or Sets inputbox control's ReportId property.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Attributes">
+            <summary>
+            Gets or Sets current control's Attributes information.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Items">
+            <summary>
+            Gets or Sets current control's Item information,it's used for Radio Button and Check Box controls.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.ItemValues">
+            <summary>
+            Gets or Sets current control's Item values,it's used for Radio Button and Check Box controls.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.HideColumns">
+            <summary>
+            Gets or Sets HideColumns property for inputbox user control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.DependControls">
+            <summary>
+            Gets or Sets DependControls property for inputbox user control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.InputControls">
+            <summary>
+            Gets or Sets the InputBox's dependency's control ID.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.OnClick">
+            <summary>
+            Gets or Sets current control's OnClick event information.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Text">
+            <summary>
+            Gets or Sets Text that current control displays.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Code">
+            <summary>
+            Gets or Sets current control's Code value.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.isNull">
+            <summary>
+            Gets or Sets isNull property for inputbox user control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.isMultiLine">
+            <summary>
+            Gets or Sets the isMultiLine property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.isVisible">
+            <summary>
+            Gets or Sets the isVisible property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.isRefresh">
+            <summary>
+            Gets or Sets the isRefresh property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.Enabled">
+            <summary>
+            Gets or Sets the Enabled property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.isUnique">
+            <summary>
+            Gets or Sets the isUnique property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.maxLength">
+            <summary>
+            Gets or Sets the max length of current control'a value.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.rowLength">
+            <summary>
+            Gets or Sets the row length of current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.IsUniqueWith">
+            <summary>
+            Gets or Sets the IsUniqueWith property for current control.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem.DefaultValueMode">
+            <summary>
+            Gets or Sets the DefaultValueMode property for current control.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection">
+            <summary>
+            a collection of ControlItem class object﹐It inherits the CollectionBase class.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.Add(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            Adds an item to ControlItemCollection object.
+            </summary>
+            <param name="value">the value to add to current object.</param>
+            <returns> The position into which the new element was inserted.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.IndexOf(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            Determines the index of a specific item in the ControlItemCollection.
+            </summary>
+            <param name="value">The ControlItem to locate in the ControlItemCollection.</param>
+            <returns>The index of value if found in the list; otherwise, -1.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.Insert(System.Int32,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            Inserts an item to the ControlItemCollection at the specified index.
+            </summary>
+            <param name="index">The ControlItem Object to insert into the ControlItemCollection.</param>
+            <param name="value">The zero-based index at which value should be inserted.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.Remove(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            Removes the first occurrence of a specific object from the ControlItemCollection.
+            </summary>
+            <param name="value"> The ControlItem Object to remove from the ControlItemCollection.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.Contains(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            Determines whether the ControlItemCollection contains a specific value.
+            </summary>
+            <param name="value">The ControlItem Object to locate in the ControlItemCollection.</param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.OnInsert(System.Int32,System.Object)">
+            <summary>
+            Checks Object type before inserting a new element into
+                the System.Collections.CollectionBase instance.
+            </summary>
+            <param name="index">The zero-based index at which to insert value.</param>
+            <param name="value">The new value of the element at index.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.OnRemove(System.Int32,System.Object)">
+            <summary>
+            Checks Object type when removing an element from the System.Collections.CollectionBase
+                instance.
+            </summary>
+            <param name="index">The zero-based index at which value can be found.</param>
+            <param name="value">The value of the element to remove from index.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.OnSet(System.Int32,System.Object,System.Object)">
+            <summary>
+            Checks Object type before setting a value in the System.Collections.CollectionBase
+                instance.
+            </summary>
+            <param name="index">The zero-based index at which oldValue can be found.</param>
+            <param name="oldValue">The value to replace with newValue.</param>
+            <param name="newValue">The new value of the element at index.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.OnValidate(System.Object)">
+            <summary>
+            Checks Object type when validating a value.
+            </summary>
+            <param name="value">The object to validate.</param>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItemCollection.Item(System.Int32)">
+            <summary>
+             Gets or sets the element at the specified index.
+            </summary>
+            <param name="index">The zero-based index of the element to get or set. </param>
+            <returns>The element at the specified index.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlDecorator.DecorateDropDownList(System.Web.UI.WebControls.DropDownList,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ControlItem)">
+            <summary>
+            綁定數據到DropDownList
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem_Filter">
+            <summary>
+            InputItem_Filter is used for Filter function on the ToolBar.
+            It implements InputItem base class.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem_Filter.getSQL">
+            <summary>
+            Gets SQL statement combined by current item.
+            </summary>
+            <returns>SQL string.  ex. "(CCV.SAP_VENDER_CODE = 'SAP_V1' AND CCV.MATERIAL_CODE = 'M22')"</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem_Filter.addPair(System.String,System.String)">
+            <summary>
+            Adds SQLField and sValue to current InputItem_Filter object.
+            </summary>
+            <param name="sSQLField">sSQLField</param>
+            <param name="sValue">sValue</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem_Filter.SQLValue(System.String)">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputItem_Filter.Count">
+            <summary>
+            Gets the number of elements actually contained in the InputItem_Filter object. 
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause_Filter">
+            <summary>
+            InputClause_Filter is used for Filter function on the ToolBar.
+            It implements InputClause base class.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.InputClause_Filter.getSQL">
+            <summary>
+            Gets SQL statement combined by current InputClause.
+            </summary>
+            <returns>SQL string. ex. "((CCV.SAP_VENDER_CODE = 'SAP_V1' AND CCV.MATERIAL_CODE = 'M22') OR (CCV.SAP_VENDER_CODE = 'SAP_V2' AND CCV.MATERIAL_CODE = 'M32') OR... )"</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.L1MasterPage">
+            <summary>
+            Master Page type.'Portal' for the basic pages,and 'NewWindow' for the new pages.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper">
+            <summary>
+            Provides common operations for system developers.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.removeCookie(System.Web.HttpRequest,System.Web.HttpResponse,System.String)">
+            <summary>
+            Removes user's Cookie.
+            </summary>
+            <param name="hrq">HttpRequest object.</param>
+            <param name="hrp">HttpResponse object.</param>
+            <param name="sCookieID">Cookie ID.</param>
+            <returns>true if the Cookie is removed, otherwise,false. </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.createInputBoxValueMap(System.String)">
+            <summary>
+            Creates map storing InputBox control data (Code + Name).
+            </summary>
+            <param name="sJSONText">Data encoded by JSON format, It is map storing InputBox control values, first string array is field names list, remaining are InputBox values
+                      ref. UI.js -> getCheckedParameter()</param>
+            <returns>map structured as: 
+                        FieldName1 -> [JSONText(Name11,Code11), JSONText(Name21,Code21)]
+                        FieldName2 -> [JSONText(Name12,Code12), JSONText(Name22,Code22)]
+                        FieldName3 -> [JSONText(Name13,Code13), JSONText(Name23,Code23)]</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.addInputBoxValue(System.String,System.Collections.Hashtable,System.Web.UI.AttributeCollection)">
+            <summary>
+            Adds Attribute structured data into Hashtable object.
+            </summary>
+            <param name="sFieldID">sFieldID,ex.{'APM_EMP_NO'}.</param>
+            <param name="htData">Hashtable object.</param>
+            <param name="ac">AttributeCollection object.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getInputBoxValue(System.String,System.Collections.Hashtable,vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.IBVCellType)">
+            <summary>
+            Gets InputBox Value in Hashtable object.
+            </summary>
+            <param name="sFieldID">FieldID.ex.{'GROUP_CODE'}.</param>
+            <param name="htData">Hashtable object.</param>
+            <param name="ibvct">IBVCellType type object.</param>
+            <returns>The InputBox value string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getInputBoxValue(System.String,System.Collections.Hashtable,vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.IBVCellType,System.Int32)">
+            <summary>
+            Gets InputBox Value in Hashtable object.
+            </summary>
+            <param name="sFieldID">FieldID.ex.{'GROUP_CODE'}.</param>
+            <param name="htData">Hashtable object.</param>
+            <param name="ibvct">IBVCellType type object.</param>
+            <param name="IdxItem">Index of JSON format value. </param>
+            <returns>The InputBox value string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getTempFileName(System.Boolean)">
+            <summary>
+            Gets a temporal filename according to the session id and datetime,
+            if IncludePath is true,the path of the file is also returned
+            generally,the file is stored in the ..\tempfiles\ folder
+            </summary>
+            <param name="IncludePath">whether to return the path.</param>
+            <returns>a temporal file name.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.removeFiles(System.String)">
+            <summary>
+            if file's time is older than 1 minutes ,we'll clean it up.
+            </summary>
+            <param name="DirPath">File Path.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getInstace(System.Web.UI.Control)">
+            <summary>
+            Initializes a new instance of PageHelper class.
+            </summary>
+            <param name="ctl">Control object.</param>
+            <returns>PageHelper object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.setL1MasterPageFilename(System.Web.UI.MasterPage,vs.com.foxconn.sidc.sipd.sfc.sct.helper.L1MasterPage)">
+            <summary>
+            Sets page's master page.
+            </summary>
+            <param name="mp">MasterPage object.</param>
+            <param name="backGroud">Master page type.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.RemoveFiles(System.String,System.String)">
+            <summary>
+            Cleans up the files in the defined path which has been created for 
+            more than one minutes and was with the name begins with strSessionID 
+            </summary>
+            <param name="FilePath">the directory path which needs delete the files</param>
+            <param name="strSessionID">the beginning string of the file name</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.DeleteFile(System.String,System.String)">
+            <summary>
+            Deletes specific file.
+            </summary>
+            <param name="FilePath">the directory path which needs delete the files</param>
+            <param name="strSessionID">the file name</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.writeEventLog(System.Diagnostics.EventLogEntryType,System.Type,System.String[])">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.writeEventLog(System.Diagnostics.EventLogEntryType,System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.BindDateTextBox(System.Web.UI.WebControls.TextBox,System.Boolean)">
+            <summary>
+            Binds Data box function to a TextBox. 
+            </summary>
+            <param name="txtDate">TextBox object.</param>
+            <param name="blnShowDefaultDay">Determines whether to show default day.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.showJSMessage(System.String)">
+            <summary>
+            Display JS message on current page.
+            </summary>
+            <param name="sMsg">JS message to display.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.ReloadWindow(System.String)">
+            <summary>
+            Reloads current page.
+            </summary>
+            <param name="strURL">URL string to be loaded.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.SetDisabled(System.Web.UI.WebControls.TextBox)">
+            <summary>
+            Sets specified control as readonly.
+            </summary>
+            <param name="SelectValue">control to be operated.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.showJSExitWindow">
+            <summary>
+            Exits current pop up window.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.OpenWindow(System.String)">
+            <summary>
+            Opens a new window.
+            </summary>
+            <param name="strURL">Window'sURL to be opened.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.registerScript(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.JSInsertType,System.String,System.String)">
+            <summary>
+            Adds script block (ex. "<script>...</script>") in reponse. 
+            </summary>
+            <param name="jsit">JSInsertType type.</param>
+            <param name="sKey">key to be registered.</param>
+            <param name="sScriptBlock">JS block to be added.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.setSessionVariable(System.Web.SessionState.HttpSessionState,System.String,System.Object)">
+            <summary>
+            Sets session variable with respect to 'sSVID'.
+            </summary>
+            <param name="hss">HttpSessionState object.</param>
+            <param name="sSVID">The key whose value to set.</param>
+            <param name="oValue">object to be added.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getSessionVariable(System.Web.SessionState.HttpSessionState,System.String)">
+            <summary>
+            Gets session variable with respect to 'sSVID'.
+            </summary>
+            <param name="hss">HttpSessionState object.</param>
+            <param name="sSVID">The key whose value to set.</param>
+            <returns>The value associated with the specified key. If the specified key is not
+                found, attempting to get it returns null.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.clearSessionVariable(System.Web.SessionState.HttpSessionState,System.String)">
+            <summary>
+            Removes session variable with respect to 'sSVID'.
+            </summary>
+            <param name="hss">HttpSessionState object.</param>
+            <param name="sSVID">he key whose value to remove.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.getMethodName(System.String)">
+            Description: 
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.GetStartTick">
+            <summary>
+            Gets start time of the Page.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.GetTimeSpan">
+            <summary>
+            Gets the span time of the Page.
+            </summary>
+            <returns>TimeSpan object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.ShowRunTime">
+            <summary>
+            Displays the span time result on a Page.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.serializeParams(System.Collections.Hashtable)">
+            <summary>
+            serializes parameters.
+            </summary>
+            <param name="hsParams">Parameters to be serialized</param>
+            <returns>string value.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.deSerializeParams(System.String)">
+            <summary>
+            Deserialize parameters.
+            </summary>
+            <param name="sParams">Parameters to be deserialized</param>
+            <returns>Hashtable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.#ctor(System.Web.UI.Page)">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.ReportDirectory">
+            <summary>
+            Get's the Report's XML directory.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.ConfDirectory">
+            <summary>
+            Get's the 'conf' derectory.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.TempDirectory">
+            <summary>
+            Gets the TempDirectory.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.RandomString">
+            <summary>
+            Gets a radom filename according to the session id and datetime.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.IsPostBack">
+            <summary>
+            Detects if the PostBack is occur when cross page is incurred
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.MethodName">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.InputCriteriaManager">
+            <summary>
+            Gets or Sets the InputCriteriaManager object which is used for sorting,searching or filtering functions.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.PageCode">
+             <summary>
+            Gets or Sets the PageCode of current page.ex.'Project'.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.FunctionCode">
+            <summary>
+            Gets or Sets the FunctionCode of current page.ex.'Project'.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.PathInfo">
+            <summary>
+            Gets or Sets the PathInfo string of current page which is a BDI.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.FunctionPath">
+            <summary>
+            Gets or Sets the FunctionPath string of current page.ex.'/com/foxconn/sidc/sipd/sfc/EIT/aspx/Basic/Project.aspx'.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.ControlRB">
+            <summary>
+            Gets or Sets the ControlRB property which is an ResourceBundle instance used for WebControl.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.FunctionRB">
+            <summary>
+            Gets or Sets the FunctionRB property which is an ResourceBundle instance used for Page.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.FunctionDAO">
+            <summary>
+            Gets or Sets FunctionDAO property which is a SuperDAO object used for operating Database.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.AccessRecord">
+            <summary>
+            Gets or Sets AccessRecord property which is a AccessRecord object
+            used for recording user login,logout time and operations.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.APName">
+            <summary>
+            Gets or Sets current system's APName.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.Timeout">
+            <summary>
+            Gets or Sets Session's Timeout of current Page.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.UserID">
+            <summary>
+            Gets current user's ID.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.UserName">
+            <summary>
+            Gets current user's Name.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.UserIdentity">
+            <summary>
+            Gets or Sets UserIdentity property which is a ISFCIdentity instance used for identifying users.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.Item(System.String)">
+            <summary>
+             Gets or sets the value associated with the specified key.the value is stored in Session.
+            </summary>
+            <param name="sSVID">The key whose value to get or set.</param>
+            <returns>The value associated with the specified key. If the specified key is not
+                found, attempting to get it returns null</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.IBVCellType">
+            <summary>
+            Gets real data(Code or Name) from the deserialized JSON text.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper.JSInsertType">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.getUserGroup(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            獲得該用戶擁有的群組 Lee 20100907
+            </summary>
+            <param name="ph"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.getTheuUserGruopString(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            獲得登陸用戶所擁有的群組
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.ifTheSuperUser(System.String)">
+            <summary>
+            檢查該用戶是否為超級用戶 Lee 20100907
+            </summary>
+            <param name="sGroupCode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.AddAPMGroup(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String,System.String)">
+            <summary>
+            新增APM GROUP 
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.AddAPMGroupEMP(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String[],System.String)">
+            <summary>
+            新增APM GROUP EMPLOYEE
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.DeleteAPMGroup(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            <summary>
+            刪除
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMGroupHelper.UpdateAPMGroup(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            修改
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.TimeOutRecordHelper">
+            <summary>
+            Records  action's start time and calculates its spantime when it is finished.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.TimeOutRecordHelper.#ctor">
+            <summary>
+            Initializes a new instance of the TimeOutRecordHelper class.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.TimeOutRecordHelper.getTime">
+            <summary>
+            Calculates action's spantime when it is finished.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ExcelHelper.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="fileName">Excel文件名</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ExcelHelper.saveAsFile(System.String,System.String[])">
+            <summary>
+            另存文件
+            </summary>
+            <param name="fileName">文件名</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ExcelHelper.killExcelProcess">
+            <summary>
+            结束Excel进程
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ExcelHelper.Dispose">
+            <summary>
+            Dispose
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ExcelHelper.TempletFilePath">
+            <summary>
+            Excel模板文件路径
+            </summary>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter._datafilter">
+            <summary>
+            通過此屬性,獲取XML文件對象
+            </summary>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter._filepathandname">
+            <summary>
+            XML文件路徑及名稱
+            </summary>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter._xd">
+            <summary>
+            XML頂層節點集
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.#ctor">
+            <summary>
+            無參數之構造函數,默認讀取一固定節點之XML文件
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.#ctor(System.String)">
+            <summary>
+            construct the object
+            </summary>
+            <param name="sFilepathAndName">the path and name about the XML file</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.LoadFile(System.String)">
+            <summary>
+            加載XML文件
+            </summary>
+            <param name="sFilePathAndName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.initDataStructure">
+            <summary>
+            XML文件數據讀取及構造對象
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.readXMLForPage(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterPage})">
+            <summary>
+            讀取Page節點
+            </summary>
+            <param name="xne">節點集</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.readXMLForTable(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterTable})">
+            <summary>
+            讀取Table節點
+            </summary>
+            <param name="xde"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.readXMLColumn(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterColumn})">
+            <summary>
+            讀取Column節點
+            </summary>
+            <param name="xne"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.readXMLForMainCondition(System.Xml.XmlNodeList,vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterColumn)">
+            <summary>
+            讀取MainCondition節點
+            </summary>
+            <param name="xne"></param>
+            <param name="alt"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.ControlDataFilter.readXMLForMappedCondition(System.Xml.XmlNode,vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterColumn)">
+            <summary>
+            獲得MappedCondition節點
+            </summary>
+            <param name="xnl"></param>
+            <param name="alt"></param>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.sCONFIG_FILENAME">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.startTX">
+            Description: start transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.commitTX(System.Object)">
+            Description: commit transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.rollbackTX(System.Object)">
+            Description: undo transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.executeUpdate(System.String,System.Collections.Hashtable)">
+            Description: executing { INSERT, UPDATE, DELETE } statements
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.updateTable(System.String,System.Data.DataTable)">
+            Description: executing insert a datatable
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.executeQuery(System.String,System.Collections.Hashtable)">
+            Description: executing { SELECT } statements
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.executeScalar(System.String,System.Collections.Hashtable)">
+            Description: the first field of first recorder from recorder set, such as { SELECT }
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.executeDataReader(System.String,System.Collections.Hashtable)">
+            Description: Execute SQL and return OdbcDataReader,change OdbcDataReader to dataTable
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.executeStoreProcedure(System.String,System.Collections.Hashtable)">
+            <summary>
+            execute procedure
+            </summary>
+            <param name="sSPNAME">storeprocedure name</param>
+            <param name="ht">storeprocedure parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.close">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.createUniqueToken">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.getConnectionURL(System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.#ctor(System.String)">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.sConnectionURL">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.AutoCommit">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dbcp.ODBCService.ConfigPathname">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ASSEMBLY_PREFIX">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.getInstace">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.#ctor">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.createResourceTable">
+            Description: reading information from assembly, leading with Web_*, and create function recorder for each function
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.addNewRecorder2Table(vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder)">
+            Description: add new recorder object to hashtable, whose key field is hash code of function name 
+                             "com.foxconn.sidc.sipd.sfc.sct.aspx.Basic.Customer.ConsignVendor" and value field contain  
+                             ResourceRecorder list (because the hash code of function_name can be the same)
+            
+            OUTPUT: TRUE=the new function is added
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.pm">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.dicirrl">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder.#ctor(System.Reflection.Assembly,System.Type)">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder.asm">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder.Assembly">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder.PageName">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.PermissionManager.ResourceRecorder.FunctionName">
+            Description: convert the ordinal page name to its function name, we will trim the ending "_xxx" substring.
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.LoadFromXML(System.Xml.XmlNode,vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo)">
+            <summary>
+            Read XML Node
+            </summary>
+            <param name="xNode"></param>
+            <param name="ci"></param>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.Title">
+            <summary>
+            Set or Get Chart Title
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.Width">
+            <summary>
+            Set or Get Chart Width
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.Height">
+            <summary>
+            Set or Get Chart Height
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.ShowLegend">
+            <summary>
+            Set or Get Chart Has Legend Or Not
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.AxisList">
+            <summary>
+            Set Or Get Axis List Of This Chart
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo.ChartSeriesList">
+            <summary>
+            Set Or Get Series List Of This Chart
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.Caption">
+            <summary>
+            Gets or Sets the ChartSeries' Caption.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.ChartSeriesType">
+            <summary>
+            Gets or Sets the ChartSeries' Type.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.Color">
+            <summary>
+            Gets or Sets the ChartSeries' Color.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.LabelColor">
+            <summary>
+            Gets or Sets the Label' Color.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.ShowLabel">
+            <summary>
+            Judge whether to show Label.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartSeriesInfo.Format">
+            <summary>
+            Gets or Sets data' Format.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPicInfo">
+            <summary>
+            ChartPicInfo Class (Read XML Node,Export Picture To Path)
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPicInfo.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo})">
+            <summary>
+            Read From XmlNode
+            </summary>
+            <param name="xn">Xml node</param>
+            <param name="lci">chartInfo object list</param>
+            <returns>chartInfo object list</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPicInfo.readFromXMLNodeSet(System.Xml.XmlNode,vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartInfo)">
+            <summary>
+            Read From XML node
+            </summary>
+            <param name="xn">XML node</param>
+            <param name="ci">ChartInfo object</param>
+            <returns>ChartInfo object</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPicInfo.Categories">
+            <summary>
+            X Axis Categories
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPicInfo.SeriesDataSource">
+            <summary>
+            Series DataSource 
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper">
+            <summary>
+            LicenseHelper provides method for operating license.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.IsValidLicenseAvailable">
+            <summary>
+            Checks if a valid license file is available.
+            </summary>
+            <returns>If available,return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.ReadAdditonalLicenseInformation">
+            <summary>
+            Reads additonal license information from a license license
+            </summary>
+            <returns>additonal license information</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.CheckEvaluationLock">
+            <summary>
+            Checks the license status of Evaluation Lock
+            </summary>
+            <returns>If lock enabled and reached the evaluation time  return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.CheckExpirationDateLock">
+            <summary>
+            Check the license status of Expiration Date Lock
+            </summary>
+            <returns>If lock enabled and current date past the expiration date,return true,else false.  </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.CompareHardwareID">
+            <summary>
+            Compares current Hardware ID with Hardware ID stored in License File
+            </summary>
+            <returns>If Hardware ID and Hardware ID stored in License File are the same ,return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.LicenseHelper.LoadLicense(System.String)">
+            <summary>
+            Loads the license.
+            </summary>
+            <param name="filename">License file name.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilter.getPageNodeByName(System.String)">
+            <summary>
+            get the special pagenode by name
+            </summary>
+            <param name="sName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterPage.getTableNodeByName(System.String)">
+            <summary>
+            get the special table by name
+            </summary>
+            <param name="sName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterTable.getColumnNodeByName(System.String)">
+            <summary>
+            get the special column by name
+            </summary>
+            <param name="sName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DataFilterColumn.getMapConditionByLevel(System.String)">
+            <summary>
+            get the special MappedCondition by level
+            </summary>
+            <param name="sLevel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.DynamicFieldTable.OnLoad(System.EventArgs)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.DynamicFieldTable.CreateChildControls">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.DynamicFieldTable.sXMLFilename">
+            Description:
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.DynamicFieldTable.XMLFilename">
+            Description:
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.srv_control.DynamicFieldTable.ReportID">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.#ctor">
+            <summary>
+            construct
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo})">
+            <summary>
+            Read not from xml
+            </summary>
+            <param name="xn">xml node</param>
+            <param name="aiList">List of AxisInfo</param>
+            <returns>List of AxisInfo(Fill with AxisInfo infomations)</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.HasTitle">
+            <summary>
+            Judges whether the Axis has Title.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.AxisFormat">
+             <summary>
+            Sets or gets the Axis' Format.
+             </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.AxisCaption">
+             <summary>
+            Sets or gets the Axis' Min Title.
+             </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.AxisMaxValue">
+             <summary>
+            Sets or gets the Axis' Max Value.
+             </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.AxisInfo.AxisMinValue">
+             <summary>
+            Sets or gets the Axis' Min Value.
+             </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.UserHelper">
+            <summary>
+            Helper file for login page.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.UserHelper.getRoleList(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,vs.com.foxconn.sidc.sipd.sfc.sct.system.ISFCIdentity)">
+            <summary>
+            Gets user's GroupCode which current user belongs to.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="isfci">ISFCIdentity object.</param>
+            <returns>GroupCode string separated by ','.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.UserHelper.login(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,vs.com.foxconn.sidc.sipd.sfc.sct.system.ISFCIdentity)">
+            <summary>
+            checks whether current user has right to login the system.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="isfci">ISFCIdentity object.</param>
+            <returns>If current user has right to login the system,return true,otherwise,false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.UserHelper.checkPassword(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            <summary>
+            checks user's password.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="strName">user name.</param>
+            <param name="strpassword">user password.</param>
+            <returns>If user's password is right,return true,otherwise false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.UserHelper.setPassword(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            <summary>
+            Sets specified user's password.
+            </summary>
+            <param name="ph">PageHelper object.</param>
+            <param name="strName">user name.</param>
+            <param name="strNewPassword">user's passwod to be set.</param>
+            <returns>If sets password seccess,return true,otherwise false.</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo">
+            Description: reading information from defined XML configuration file
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.setControlItems">
+            Description: called before setControl(key, value)
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.setControlItem(System.String,System.Object)">
+            Description: called before init()
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.init">
+            Description: try to initialize the member data 
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.startTX">
+            Description: start transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.commitTX(System.Object)">
+            Description: commit transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.rollbackTX(System.Object)">
+            Description: undo transaction
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.createUniqueToken">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.executeQuery(System.String,System.Collections.Hashtable)">
+            Description: executing { SELECT } statements
+            FORMAT: returned table is as { dbms_rowid.rowid_row_number(rowid), Name, .... }
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.getSql">
+            <summary>
+            return the completed sql  add by Lee 20101129
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.executeStoreProcedure(System.String,System.Collections.Hashtable)">
+            <summary>
+            execute procedure
+            </summary>
+            <param name="sSPNAME">storeprocedure name</param>
+            <param name="ht">storeprocedure parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.getConnectionURL(System.String)">
+            Description: 目前連線建立所使用的 DBURL
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.getRealConfigPathname">
+            Description: 設定檔的真實路徑
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.toSQLClause">
+            Description: return executable SQL statement, which will be input with corresponding information
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.loadFromXMLFile(System.String,System.String)">
+            Description: loading report data, specified by 'sID', from XML file
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.reset">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.#ctor(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            constructor
+            </summary>
+            <param name="ph"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.#ctor(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO)">
+            <summary>
+            constructor
+            </summary>
+            <param name="sdao"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.readFromXMLNode(System.Xml.XmlNode)">
+            <summary>
+            Description: read data by System.Xml.XmlNode object 
+            </summary>
+            <param name="xn"></param>
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.sdao">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.sXMLFilename">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.sTitle">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ExportToPicture">
+            <summary>
+            Save Picture To Server
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.Title">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.AutoCommit">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.XMLFilepath">
+            
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.sConfigDir">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.#ctor">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.init(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO)">
+            Description: try to initialize the member data 
+            OUTPUT: TRUE=OK, FALSE=Failed
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl})">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.sID">
+            
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.sReportValue">
+            查詢條件來源﹐即另一個Report對象的ID﹐當該屬性被指定時﹐
+             程式會從資料庫中取出有關數據來填充本控件(當控件是DropDownList時)或設置控件的有關屬性以使其可
+             以找到指定的數據(當控件是TextBox時﹐設置其Onclick屬性)
+             考慮到該數據源會來自不同的文件﹐這里要求用戶在本屬性中指定文件名﹐但對不同目錄中的
+             文件不作處理﹐因此這里約定所有的XML文件應放在同一個目錄中
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.ReportValue_Filename">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.ControlType">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoControl.SelectedMode">
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter" -->
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.#ctor">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.toSQLClause">
+            Description: 傳回相對應的 SQL 語句
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter})">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.sID">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.ParamType">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.ParamOperator">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoParameter.ParamFlag">
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn" -->
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn.#ctor">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn})">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn.Index">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoColumn.AlignType">
+            
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoChart" -->
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoChart.readFromXMLNodeSet(System.Xml.XmlNode,System.Collections.Generic.List{vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoChart})">
+            Description:
+        </member>
+        <member name="F:vs.com.foxconn.sidc.sipd.sfc.sct.system.ReportInfo.ReportInfoChart.sTitle">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.WebGridDemoHelper.GetList(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            <summary>
+            獲取員工列表
+            </summary>
+            <param name="ph"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.WebGridDemoHelper.Add(vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.Employee)">
+            <summary>
+            添加員工對象
+            </summary>
+            <param name="employee">添加對象</param>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DBHelper">
+            <summary>
+            symbols for Database operation.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.DBHelper.packValue(System.String,vs.com.foxconn.sidc.sipd.sfc.sct.helper.DBHelper.LikeTermPosition)" -->
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle">
+            <summary>
+            Gets detail information of the resource document which extension is .properties . 
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.getPreferedUserLanguage(System.String[])">
+            <summary>
+            Selects the suitable language.
+            </summary>
+            <param name="saUserLanguage">User provides languages,if more than one,seperate by ;</param>
+            <returns>Suitable language string</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.getSQLField(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            <summary>
+            Gets sSQLField value of specified Item.
+            </summary>
+            <param name="ph">PageHelper instance which contains ResourceBundle object.</param>
+            <param name="sRecID">Item's key value.</param>
+            <returns>sSQLField string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.op_Addition(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle)">
+            <summary>
+            Override '+' operator for ResourceBundle object.
+            </summary>
+            <param name="rbL">The first param on the left of '+'.</param>
+            <param name="rbR">The second param on the right of '+'.</param>
+            <returns>A ResourceBundle object containing the elements of rbL and rbR.
+                     If rbR is null,return rbL.If rbR equals or contains rbL,return rbR. </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of ResourceBundle.
+            </summary>
+            <param name="sResourceID">ResourceID,if null,default value is 'Page'.</param>
+            <param name="sAreaCode">AreaCode,if null,default is String.Empty.</param>
+            <param name="sSectionID">SectionID,default is 'Common'.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.importData">
+            <summary>
+            Import resource data from document to memory.
+            </summary>
+            <returns>The number of elements actually contained in the specified SectionID.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.importSectionData(System.String)">
+            <summary>
+            Import specified sectionID resource data from document to memory.
+            </summary>
+            <param name="sSectionID">SectionID in the document to be loaded to memory.</param>
+            <returns>The number of elements actually contained in the specified SectionID.</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Count">
+            <summary>
+            Gets the number of elements actually contained in the ResourceBundle. 
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.Type)">
+            <summary>
+            Filter and return specified type.
+            </summary>
+            <param name="typ">Specified type.</param>
+            <returns>Data after filtering. </returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.Type,System.Collections.ArrayList)">
+            <summary>
+            Filter and return specified type.
+            </summary>
+            <param name="typ">Specified type.</param>
+            <param name="al">ArrayList object used for storing filtered data. </param>
+            <returns>Data after filtering. </returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.String,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle)">
+            <summary>
+             Gets the sValue associated with the specified key.
+            </summary>
+            <param name="sKey">The key whose sValue to get.'sKey' is case insensitive</param>
+            <param name="rbAlternative"> Alternative repository,'rbAlternative' is alternative repository if 'sKey' is missed .</param>
+            <returns>The value associated with the specified key.</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.String)">
+            <summary>
+            Gets the object associated with the specified key.
+            </summary>
+            <param name="sKey">The key whose object to get.'sKey' is case insensitive</param>
+            <returns>The value associated with the specified key.
+            If the specified key is not found, attempting to get it returns null.</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.String,System.Boolean)">
+            <summary>
+             Gets the sValue associated with the specified key.
+            </summary>
+            <param name="sKey">The key whose sValue to get,'sKey' is case insensitive.</param>
+            <param name="IsNullReturn">Whether to return null when the specified key is not found.</param>
+            <returns>The value associated with the specified key.When the specified key is not found,
+            If 'IsNullReturn' set true,return null,else original 'sKey'.</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.Item(System.String,System.Boolean,System.String)">
+            <summary>
+             Gets the sValue associated with the specified key.
+            </summary>
+            <param name="sKey">The key whose sValue to get,'sKey' is case insensitive.</param>
+            <param name="IsNullReturn">Whether to return null when specified key is not found.</param>
+            <returns>The value associated with the specified key.
+            When the specified key is not found and sDefaultValue is not null,return sDefaultValue,
+            else If 'IsNullReturn' set true,return null,otherwise return original 'sKey'.</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField">
+            <summary>
+            Reads detail information of Items when its type is DBField.
+            DBField is used for configing Grid user control. 
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.filterByAttribute(System.Collections.ArrayList,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute)">
+            <summary>
+            Filters list of DBField objects by attributes' combination.
+            </summary>
+            <param name="alIn">Capacity where DBFAttribute object comes from.</param>
+            <param name="dbfaInclude">DBFAttribute object which must be include in current capacity.</param>
+            <returns>Capacity object after filtering.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.filterByAttribute(System.Collections.ArrayList,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute)">
+            <summary>
+            Filters list of DBField objects by attributes' combination.
+            </summary>
+            <param name="alIn">Capacity where DBFAttribute object comes from.</param>
+            <param name="dbfaInclude">DBFAttribute object which must be include in current capacity.</param>
+            <param name="dbfaExclude">DBFAttribute object which must be exclude in current capacity.</param>
+            <returns>Capacity object after filtering.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.filterByAttribute(System.Collections.ArrayList,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute,System.Collections.ArrayList)">
+            <summary>
+            Filters list of DBField objects by attributes' combination.
+            </summary>
+            <param name="alIn">Capacity where DBFAttribute object comes from.</param>
+            <param name="dbfaInclude">DBFAttribute object which must be include in current capacity.</param>
+            <param name="dbfaExclude">DBFAttribute object which must be exclude in current capacity.</param>
+            <param name="alOut">Capacity used for storing DBFAttribute object.</param>
+            <returns>alOut after filtering.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.#ctor(System.Int32,System.String,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.String)">
+            <summary>
+            Initializes a new instance of DBField Class.
+            </summary>
+            <param name="DefaultIndex"></param>
+            <param name="sKey"></param>
+            <param name="IsPK"></param>
+            <param name="IsSearchable"></param>
+            <param name="IsSortable"></param>
+            <param name="IsVisible"></param>
+            <param name="IsVirtual"></param>
+            <param name="IsBound"></param>
+            <param name="sValue"></param>
+            <param name="sFunMethod"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.op_Equality(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField)">
+            <summary>
+            Determines whether two specified DBField objects have the same value.
+            </summary>
+            <param name="dbf1">A DBField object.</param>
+            <param name="dbf2">A DBField object.</param>
+            <returns>true if the value of dbf1 is the same as the value of dbf2; otherwise, false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.op_Inequality(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField,vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField)">
+            <summary>
+            Determines whether two specified DBField objects have the different value.
+            </summary>
+            <param name="dbf1">A DBField object.</param>
+            <param name="dbf2">A DBField object.</param>
+            <returns>true if the value of dbf1 is different from the value of dbf2; otherwise, false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.CompareTo(System.Object)">
+            <summary>
+            Implement interface IComparable.
+            </summary>
+            <param name="oTgt">Object to be compaired with.</param>
+            <returns>If larger than oTgt,return 1,else if equal,return 0,otherwise -1.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.op_Implicit(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField)~System.String">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.ToString">
+            <summary>
+            Overrides ToString method.
+            </summary>
+            <returns>sValue.</returns>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsPK">
+            <summary>
+            Determines whether current item is PK.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsSearchable">
+            <summary>
+            Determines whether current item can be operated by the Search function.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsSortable">
+            <summary>
+            Determines whether current item can be operated by the Sort function.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsVisible">
+            <summary>
+            Determines whether current item displays or not.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsVirtual">
+            <summary>
+            Determines whether checkBox or numItem displays or not.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.IsBound">
+            <summary>
+            Determines whether current item is bound to the CheckBox,when set true,current item value
+            can be post to another window.
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.DBField.DBFAttribute">
+            <summary>
+            DBFAttribute provides detail attributes for Grid items. 
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.ToolBarField">
+            <summary>
+            ToolBarField provides detail attributes for ToolBar user control.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.ToolBarField.#ctor(System.String,System.String,System.String,System.String,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of ToolBarField Class.
+            </summary>
+            <param name="sKey">Current Item's key.</param>
+            <param name="sBackImageURL">Back image URL.</param>
+            <param name="sForeImageURL">Fore image URL.</param>
+            <param name="sJSCode">JS code.</param>
+            <param name="IsVisible">Determines whether current item is displayed or not.</param>
+            <param name="sValue">value.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.ToolBarField.op_Implicit(vs.com.foxconn.sidc.sipd.sfc.sct.utility.ResourceBundle.ToolBarField)~System.String">
+            Description: implement interface IComparable
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.FuncExeTimeCheck">
+            <summary>
+            Provides functions to record program's FunctionCode and SQL which costs over three seconds to run.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.FuncExeTimeCheck.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the FuncExeTimeCheck class.
+            </summary>
+            <param name="sSql"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.FuncExeTimeCheck.EndSql">
+            <summary>
+            Checks the span time of current function,if it costs over three seconds,insert this record into Database.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.#ctor">
+            <summary>
+            Construct
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.arrToString(System.String[])">
+            <summary>
+            Array Transform To String(Tab Spliter)
+            </summary>
+            <param name="arr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.setFont(OWC10.ChFont,System.String,System.Int32,System.Boolean)">
+            <summary>
+            Set Font
+            </summary>
+            <param name="font"></param>
+            <param name="strName"></param>
+            <param name="intSize"></param>
+            <param name="blnBold"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.initCategories(System.String[])">
+            <summary>
+            Initial Categories
+            </summary>
+            <param name="arrCategories"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.setLegend(System.Boolean)">
+            <summary>
+            Set Legend of Chart
+            </summary>
+            <param name="bolLegend"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.setYAxis(System.Int32,System.String)">
+            <summary>
+            Set Axis Type and Title
+            </summary>
+            <param name="intAxis"></param>
+            <param name="strTitle"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.setYAxis(System.Int32,System.String,System.String)">
+            <summary>
+            Set Axis Type,Type and Format
+            </summary>
+            <param name="intAxis">0(X),1 Default Y Axic(left)</param>
+            <param name="strTitle">Title</param>
+            <param name="strNumberFormat">Format</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.setYAxis(System.Int32,System.String,System.Double,System.Double,System.String)">
+            <summary>
+            Set Axis Type,Type and Format
+            </summary>
+            <param name="intAxis">0(X),1 Default Y Axic(left)</param>
+            <param name="strTitle">Title</param>
+            <param name="dMin">Min Value</param>
+            <param name="dMax">Max Value</param>
+            <param name="strNumberFormat">Number Format</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.AddSeries(System.String,System.String[],System.Int32,System.String,System.Boolean,System.String)">
+            <summary>
+            Add Series
+            </summary>
+            <param name="strTitle">Series Title</param>
+            <param name="arrValue">Array Value</param>
+            <param name="intChartType">Chart Type</param>
+            <param name="strColor">Color</param>
+            <param name="blnLabel">Has Lable Or Not</param>
+            <param name="strLabelFormat">Lable Format</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.AddSeries(System.String,System.String[],System.Int32,System.String,System.String,System.Boolean,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Add Series
+            </summary>
+            <param name="strTitle">Series Title</param>
+            <param name="arrValue">Array Value</param>
+            <param name="intChartType">Array Type</param>
+            <param name="strColor">Color</param>
+            <param name="strLabelColor">Lable Color</param>
+            <param name="blnLabel">Has Label or Not</param>
+            <param name="strLabelFormat">Label Format</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.AddSeries(System.Boolean,System.String,System.String[],System.Int32,System.String,System.Boolean,System.String)">
+            <summary>
+            Add Series
+            </summary>
+            <param name="blnNewLayer">Build Series To New Layer</param>
+            <param name="strTitle">Series Title</param>
+            <param name="arrValue">Array Value</param>
+            <param name="intChartType">Chart Type</param>
+            <param name="strColor">Color</param>
+            <param name="blnLabel">Label</param>
+            <param name="strLabelFormat">Label Format</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.ExportToPicture(System.String)">
+            <summary>
+            Export Chart Picture to Path
+            </summary>
+            <param name="strFileName"></param>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.Height">
+            <summary>
+            Set or Get Height of Chart Picture 
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.Width">
+            <summary>
+            Set or Get Width of Chart Picture
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.ChartPic.Title">
+            <summary>
+            Set Or Get Chart Title
+            </summary>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.BDIHelper">
+            <summary>
+            class for BDI.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.BDIHelper.GetCode(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            <summary>
+            Excutes  "arrSql" SQL statement.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="arrSql">SQL statement.</param>
+            <returns>result string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getUserGroup(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            獲得該用戶擁有的群組 Lee 20100924
+            </summary>
+            <param name="ph"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.ifTheSuperUser(System.String)">
+            <summary>
+            檢查該用戶是否為超級用戶 Lee 20100907
+            </summary>
+            <param name="sGroupCode"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.isUserManager(System.String)" -->
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getUserList(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getUserFunctionDataTable(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            Description: get menu data with specified AP_Name
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getUserFunctionDataRows(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String)">
+            Description: get row datas accoroding to specified {sURL, sAction}
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.clearInvalidData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            Description: clear invalid data such as cyclic function recorders
+            RETURN: 0=nothing to clear, else number of recorders to be removed
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.checkPermission(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            Description: check whether user have right to execute function specified by { sURL, sAction }
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getPermissionNames(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            Description: get 
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.IsHeadPlant(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.ExsitDuplicate(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            Dscription:判斷是否存在數據的FUNCTIONCODE=PREFUNCTIONCODE的數據紀錄
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.getGeneralGruopWebAPRoot(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String)">
+            <summary>
+            Lee 20100909 獲得一般群組的APRoot節點
+            </summary>
+            <param name="ph"></param>
+            <param name="strAPName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMHelper.SaveNodeInfo(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ph"></param>
+            <param name="strFunctionCode"></param>
+            <param name="sEnName"></param>
+            <param name="Chname"></param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.XMLMenuTree.#ctor">
+             <summary>
+            defult constructor
+             </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.XMLMenuTree.#ctor(System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="strFilePathAndName"> the XML File path</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.XMLMenuTree.FindTreeNode">
+            <summary>
+            find the MenuTree node in XML File,if it does not exist,Add a new MenuTree node.
+            </summary>
+            <returns> MenuTree node</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.XMLMenuTree.AddTreeElement(System.String,System.String)">
+            <summary>
+            add a new element to the menutree node
+            </summary>
+            <param name="key">key</param>
+            <param name="value">value</param>
+            <returns>add successful,return true,else false</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.XMLMenuTree.DeleteTreeElement(System.String)">
+            <summary>
+            delete a element in the menutree
+            </summary>
+            <param name="key">key</param>
+            <returns>delete successful,return true,else false</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.SessionFactory.OpenSession(System.String)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.hibernate.SessionFactory.BuildSessionFactory(System.String)">
+            Description:
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord">
+            <summary>
+            Records user login,logout time and operations.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.#ctor(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="dao">Database operation object</param>
+            <param name="sUserId">User ID</param>
+            <param name="sUserIP">User IP</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.addRecord(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO,System.String,System.String)">
+            <summary>
+            Adds an action that user do
+            </summary>
+            <param name="dao">Database operation object</param>
+            <param name="strFunctionUnicode">FunctionUnicode</param>
+            <param name="strAction">Action</param>
+            <returns>if Successfully added return true,else false</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.addRecord(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO)">
+            <summary>
+            Adds an action that user do
+            </summary>
+            <param name="dao">Database operation object</param>
+            <returns>if Successfully added return true,else false</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.updateLogoutTime(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO)">
+            <summary>
+            Updates the logout time
+            </summary>
+            <param name="dao">Database operation object</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.getRecordUnicode(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO)">
+            <summary>
+            Gets Record Unicode
+            </summary>
+            <param name="dao">Database operation object</param>
+            <returns>Recourd Unicode</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.getLastLoginTime(vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO,System.String)">
+            <summary>
+            Gets last login time
+            </summary>
+            <param name="dao">Database operation object</param>
+            <param name="UserId">User ID</param>
+            <returns>last login time</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.AccessRecord.getLoginRecord">
+            <summary>
+            Gets login Record
+            </summary>
+            <returns>login Record</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO">
+            <summary>
+            Provides all database operations.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.startTX">
+            <summary>
+            Start a transaction at the database.
+            </summary>
+            <returns> An object representing the new transaction</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.commitTX(System.Object)">
+            <summary>
+            Commits  transaction.
+            </summary>
+            <param name="oTX">Tansaction object to be operated.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.rollbackTX(System.Object)">
+            <summary>
+            Roll back  transaction.
+            </summary>
+            <param name="oTX">Tansaction object to be operated.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeUpdate(System.String)">
+            <summary>
+            Executes{ INSERT, UPDATE, DELETE } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeUpdate(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes{ INSERT, UPDATE, DELETE } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.updateTable(System.String,System.Data.DataTable)">
+            <summary>
+            Inserts a datatable into DataBase.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="dt">Inserting data is stored in it</param>
+            <returns>The number of rows successfully updated from the System.Data.DataTable.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeQuery(System.String)">
+            <summary>
+            Executes { SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <returns>An System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeQuery(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes { SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>An System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeScalar(System.String)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the
+             result set returned by the query as a .NET Framework data type. Extra columns
+             or rows are ignored.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <returns>The first column of the first row in the result set as a .NET Framework data type, or a null reference.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeScalar(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes the query, and returns the first column of the first row in the
+             result set returned by the query as a .NET Framework data type. Extra columns
+             or rows are ignored.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns> The first column of the first row in the result set as a .NET Framework data type, or a null reference.
+             </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeDataReader(System.String,System.Collections.Hashtable)">
+            <summary>
+             Executes{ SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="ht">Values based on SQL variables. </param>
+            <returns>An System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeDataReader(System.String)">
+            <summary>
+             Executes{ SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <returns>n System.Data.DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeStoreProcedure(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes StoreProcedure.
+            </summary>
+            <param name="sSPName">Storeprocedure text.</param>
+            <param name="htValues">Storeprocedure parameters.</param>
+            <returns>A hashtable containing the executing results. </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.executeReader(System.String,System.Collections.Hashtable)">
+            <summary>
+            Executes { SELECT } statements.
+            </summary>
+            <param name="sSQL">SQL statement.</param>
+            <param name="htValues">Values based on SQL variables. </param>
+            <returns>An System.Data.OracleClient.OracleDataReader object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.close">
+            <summary>
+             Closes the connection to the database.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.createUniqueToken">
+            <summary>
+            Creates an unique token.
+            </summary>
+            <returns>A new string token</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.#ctor">
+            <summary>
+            Initializes a new instance of the SuperDAO.
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.dao.SuperDAO.Connection">
+            <summary>
+            Gets or sets the database connection object.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.attribute.PermissionBaseAttribute.#ctor(vs.com.foxconn.sidc.sipd.sfc.sct.attribute.PermissionOperation,System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.attribute.PermissionBaseAttribute.#ctor(vs.com.foxconn.sidc.sipd.sfc.sct.attribute.PermissionOperation,System.String,System.String)">
+            
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.attribute.PermissionBaseAttribute.ToString">
+            
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility">
+            <summary>
+            Provides methods to operate the Database.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.getData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String)">
+            <summary>
+            Gets Data from DataBase used for BDI.Its column names come from *.properties file.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="sWhere">sWhere</param>
+            <param name="sKey">skey</param>
+            <param name="sOrderBy">sOrderBy</param>
+            <returns>DataTable object which cotains suitable data.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.getData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String,System.String)">
+            <summary>
+            Gets Data from DataBase used for BDI.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="showSql">SQL statement.</param>
+            <param name="sWhere">sWhere</param>
+            <param name="sKey">skey</param>
+            <param name="sOrderBy">sOrderBy</param>
+            <returns>DataTable object which cotains suitable data.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.AddTableData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Collections.Hashtable)">
+            <summary>
+            Adds a new data to Database.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="ht">Hashtable object.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.UpdateTableData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Collections.Hashtable)">
+            <summary>
+            Update data in Database.
+            </summary>
+            <param name="ph">PageHelper instance. </param>
+            <param name="ht">Hashtable object. </param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.GetData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.Collections.Hashtable)">
+            <summary>
+            Querys data based on SQL statement. 
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="showSQL">SQL statement.</param>
+            <param name="ht">Hashtable object.</param>
+            <returns>DataTable object.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.GetMax``1(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,``0,System.String)">
+            <summary>
+            Gets the Max value of the specified column.
+            </summary>
+            <typeparam name="T">object Type. ex.{string}</typeparam>
+            <param name="ph">PageHelper instance.</param>
+            <param name="strFunc">SQL statement.</param>
+            <param name="dbKey">datatable column.</param>
+            <returns>Queryed data based on SQL statement.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.getDataByHibernate(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.Add(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Data.DataTable)">
+            Description: Add Data to DataBase
+            INPUT: DataTable
+            OUTPUT: -1=OK, others=the error line number (0++)
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.AddData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Collections.Hashtable)">
+            <summary>
+            Insert a new data into Database.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="ht">Hashtable object.</param>
+            <returns>if data is successfully added,return true,else false. </returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.UpdateData(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Collections.Hashtable)">
+            <summary>
+            Updates data in Database.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="ht">Hashtable object.</param>
+            <returns>if updates seccessful,return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.isExisted(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Data.DataTable)">
+             Description:Decide whther the data can be inserted into DataBase
+            INPUT: DataTable
+            OUTPUT:true:Can insert   false:Cannot insert
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.isExisted(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Collections.Hashtable)">
+            <summary>
+            Judges whether specified data exists in database.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="ht">Hashtable object.</param>
+            <returns>if exists return true,else false.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.delete(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Web.UI.WebControls.DataGridItemCollection)">
+            <summary>
+            Deletes data from Database.
+            </summary>
+            <param name="ph">PageHelper instance</param>
+            <param name="dgic">DataGridItemCollection object</param>
+            <returns>The number of rows affected.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.deleteByHibernate(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Web.UI.WebControls.DataGridItemCollection)">
+            Description:
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.Filter(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.Web.UI.WebControls.DataGridItemCollection)">
+            <summary>
+            Filter function used for Tool_Bar.
+            </summary>
+            <param name="ph">PageHelper instance.</param>
+            <param name="dgic">DataGridItemCollection object.</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.system.DBUtility.getUserName(System.String,vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper)">
+            <summary>
+            Gets user name according to UserID.
+            </summary>
+            <param name="strUserID">User ID.</param>
+            <param name="ph">PageHelper instance.</param>
+            <returns>user name string.</returns>
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox">
+            <summary>
+            MultiSelect function
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.#ctor(System.String,System.Int32,System.String,System.String,System.String)">
+            <summary>
+            MultiSelect function
+            </summary>
+            <param name="strSql">DataSource</param>
+            <param name="intCol">Column count</param>
+            <param name="strModel">Form size</param>
+            <param name="strTitle">Form title</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.#ctor(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            Construct
+            </summary>
+            <param name="strSql">DataSource</param>
+            <param name="intCol">Column Count</param>
+            <param name="strModel">Form Size</param>
+            <param name="strTitle">Form title</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.SetDisabled(System.Web.UI.WebControls.TextBox)">
+            <summary>
+            Set Control Readonly
+            </summary>
+            <param name="SelectValue">Control Object</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox(System.Web.UI.WebControls.TextBox)">
+            <summary>
+            Initial TextBox
+            </summary>
+            <param name="SelectValue">TextBox Object</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBoxCodeVersion(System.Web.UI.WebControls.TextBox,System.Web.UI.WebControls.TextBox,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="SelectValueCode">TextBox Object</param>
+            <param name="SelectValueCode">Version of the TextBox</param>
+            <param name="SelectValueCode">ReFresh Page</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox(System.Web.UI.WebControls.TextBox,System.Boolean)">
+            <summary>
+            Initial TextBox
+            </summary>
+            <param name="SelectValue">TextBox Object</param>
+            <param name="blnReload">Reload Page or not</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox(System.Web.UI.WebControls.TextBox,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Initial TextBox
+            </summary>
+            <param name="SelectValue">TextBox Object</param>
+            <param name="strClickMode">Conditon "onclick","ondblclick"</param>
+            <param name="blnReload">Fresh Page Or Not</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox1(System.Web.UI.WebControls.TextBox,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Initial TextBox
+            </summary>
+            <param name="SelectValue">TextBox Value</param>
+            <param name="strClickMode">Click Mode(dbClick,click)</param>
+            <param name="strSearchHeader">Search header</param>
+            <param name="strOrderBy">order by</param>
+            <param name="blnReload">refresh Page or not</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox1_NoSubmit(System.Web.UI.WebControls.TextBox,System.Web.UI.WebControls.TextBox,System.String,System.String)">
+            <summary>
+            Initial TextBox(Filter condition don't reload page)
+            </summary>
+            <param name="SelectValue">Selected TextBox Object</param>
+            <param name="FilterBox1">Filter TextBox Object</param>
+            <param name="ColumnName1">Column Name</param>
+            <param name="Tip">tip</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitConditionsTextBox(System.Web.UI.WebControls.TextBox,System.String,System.String,System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            initializes the InputBox control cofy from webconfig
+            </summary>
+            <param name="control">the control to be initialized</param>
+            <param name="XmlFile">xml file path of the condition id</param>
+            <param name="strid">condition id</param>
+            <param name="intMode">1 multiple select,else single select</param>
+            <param name="colcount">the column count shown in a window,default: 3</param>
+            <param name="paramid1">sets the parameter if the conditions needs some </param>
+            <param name="paramid2">another parameter</param>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.InitTextBox_WithValue(System.Web.UI.WebControls.TextBox,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Initial TextBox
+            </summary>
+            <param name="SelectValue">TextBox Object</param>
+            <param name="strClickMode">onclick or ondblclick</param>
+            <param name="blnReload">Reload Page or not</param>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.SQL">
+            <summary>
+            set or get SQL
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.ColumnCount">
+            <summary>
+            set or get Cloumn count in the open window
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.Model">
+            <summary>
+            Set or get the form size
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.Title">
+            <summary>
+            set or get the title of open window
+            </summary>
+        </member>
+        <member name="P:vs.com.foxconn.sidc.sipd.sfc.sct.report.SelectBox.HideColumn">
+            <summary>
+            set or get the hidden column
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMUserHelper.GetUserDataTable(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            Description根據傳進來的SQL語句取得相應的DataTable
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMUserHelper.GetSqlValue(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            Description: 取得SQL對應數據集的第一個值,strSql為傳進來的SQL語句
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMUserHelper.DeleteAPMUser(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String)">
+            Description: 刪除功能,根據選擇的工號刪除相應的APMUser及其相應的組.
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMUserHelper.AddAPMUser(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,Infragistics.WebUI.UltraWebGrid.UltraWebGrid,System.String,System.String,System.String,System.String)">
+            Description: 添加功能﹐添加Employee權限帳號和密碼﹐并配置相應的組
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.APMUserHelper.ModifyAPMUser(vs.com.foxconn.sidc.sipd.sfc.sct.helper.PageHelper,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            Description: 添加功能﹐添加Employee權限帳號和密碼﹐并配置相應的組
+        </member>
+        <member name="T:vs.com.foxconn.sidc.sipd.sfc.sct.utility.INIReader">
+            <summary>
+            Reads informatin stored in the file which extention is '.ini'.
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.INIReader.getSectionNames(System.String)">
+            <summary>
+            Retrieves section names' list in config file.
+            </summary>
+            <param name="sFilename">Filename</param>
+            <returns>Database connection string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.INIReader.getValue(System.String,System.String,System.String)">
+            <summary>
+            Retrieves value with specified {sFilename, sSectionName, sKeyName}.
+            </summary>
+            <param name="sFilename">sFilename,ex.{'WebApp_CP\conf/DBLib.ini'}.</param>
+            <param name="sSectionName">sSectionName,ex.{'Oracle.SCT'}.</param>
+            <param name="sKeyName">sKeyName,ex.{'ConnectionURL'}.</param>
+            <returns>Database connection string.</returns>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.utility.INIReader.GetPrivateProfileSectionNames(System.Byte[],System.Int32,System.String)">
+            API declaration
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.OracleService.#ctor(System.String)">
+            <summary>
+            Function:setup the connection of database
+            </summary>
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.OracleService.executeQuery(System.String,System.Collections.Hashtable)">
+            Description: executing { SELECT } statements
+        </member>
+        <member name="M:vs.com.foxconn.sidc.sipd.sfc.sct.helper.demoHelper.OracleService.executeQuery(System.String)">
+            Description: executing { SELECT } statements
+        </member>
+    </members>
+</doc>

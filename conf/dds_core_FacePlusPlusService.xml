@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>WCF_PetStore_FacePlusPlusServiceApp</name>
+    <rank>8080</rank>
+    <factory>test</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.maverse.dds.util.wcf.EntryPoint, DDSApp_WCF" is_singleton="1">
+    	<property name="$IncludeChildren" value="WatchDogApp" />
+    </code>
+		<module>
+			<launcher>
+				<assembly_name>DDSCore</assembly_name>
+				<arguments>-app:WatchDog</arguments>
+			</launcher>
+			<code_base>./</code_base>
+		</module>
+  </application>
+  <database>
+    <item enabled="0">
+      <id>StatusManager</id>
+      <account>aptest</account>
+      <password>
+      </password>
+      <url>Data Source=ORCL;Persist Security Info=True;Pooling=False</url>
+      <params>
+        <item action="add" key="refresh_sec" value="10" />
+      </params>
+    </item>
+  </database>
+	<global_params>
+  	<!-- Message Output -->
+    <!--帳號: bHYSjb0CfQugmyWBuODnN_XwSn738dj6 -->
+    <item action="add" key="dds.cloud.faceplusplus.key" value="bHYSjb0CfQugmyWBuODnN_XwSn738dj6" />
+    <!--密碼: cr10gzVvTFAOFs5unjBZo4XR9nl_vGEJ -->
+    <item action="add" key="dds.cloud.faceplusplus.password" value="cr10gzVvTFAOFs5unjBZo4XR9nl_vGEJ" />
+    <!--服務器證書 C:\Users\stingc\Desktop\FacePlusPlusDetect.cer-->
+    <item action="add" key="dds.cloud.faceplusplus.server_certificate_filepath" value=".\conf\DDSApp_PetStore_FacePlusPlusService\FacePlusPlusDetect_20171212.cer" />
+    <!--服務器地址 https://api-cn.faceplusplus.com/facepp/v3/detect-->
+    <item action="add" key="dds.cloud.faceplusplus.server_endpoint" value="https://api-cn.faceplusplus.com/facepp/v3/detect" />
+    <!--item action="add" key="dds.cloud.faceplusplus.server_endpoint" value="https://api-cn.faceplusplus.com/facepp/v3/detect?api_key=bHYSjb0CfQugmyWBuODnN_XwSn738dj6&amp;api_secret=cr10gzVvTFAOFs5unjBZo4XR9nl_vGEJ&amp;image_url=https://gss0.bdstatic.com/94o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike150%2C5%2C5%2C150%2C50/sign=a344101b0e23dd54357eaf3ab060d8bb/cc11728b4710b912a0ab9a81c4fdfc0392452262.jpg" /-->
+
+		<!-- WCF config -->
+		<!-- 接收 service 狀態通知-->
+		<item action="add" key="wcf.service.observer.component.id" value="WatchDogApp" />
+		
+    <item action="add" key="bind.service_class" value="vs.com.maverse.cloud.faceplusplus.service.FacePlusPlus_FaceImpl, DDSApp_PetStore_FacePlusPlusService" />
+  </global_params>
+  <usage>
+  	WCF Rest API for Face++ service
+  	http://
+  </usage>
+</dds_core>

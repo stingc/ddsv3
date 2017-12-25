@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>PythonPlatformApp</name>
+    <rank>100</rank>
+    <factory>Test</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.foxconn.easbg.easbu.dci.ped.dds.platform.python.EntryPoint, DDSCore" is_singleton="1">
+    </code>
+		<module>
+			<launcher>
+				<assembly_name>(read-by-app)</assembly_name>		<!-- this module is assigned by app itself -->
+				<arguments>python_test1.ear</arguments>
+			</launcher>
+			<code_base>./</code_base>
+		</module>
+  </application>
+  <database>
+    <item enabled="0">
+      <id>StatusManager</id>
+      <account>aptest</account>
+      <password>
+      </password>
+      <url>Data Source=ORCL;Persist Security Info=True;Pooling=False</url>
+      <params>
+        <item action="add" key="refresh_sec" value="10" />
+      </params>
+    </item>
+  </database>
+  <global_params>
+  </global_params>
+</dds_core>

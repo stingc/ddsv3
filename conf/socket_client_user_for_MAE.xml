@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<socket-client-user>
+	<mapping id="MAE">
+		<service>
+			<account>admin</account>
+			<password>admin</password>				<!--key, ommit if * is specified-->
+			<socket-protocol>MAE,#MAE,1.1.1.1</socket-protocol>		<!-- { MappingID, Tag, Version } -->
+			<server-endpoint>127.0.0.1:9300</server-endpoint>
+		</service>
+	</mapping>
+</socket-client-user>
