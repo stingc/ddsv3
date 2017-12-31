@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>CsPacmanApp</name>
+    <rank>100</rank>
+    <factory>Utility</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.maverse.dds.git.game.CsPacman.EntryPoint, CsPacman" is_singleton="1"/>
+  </application>
+  
+  <database>
+  </database>
+
+  <global_params>
+  	<item action="add" key="IsDebug" value="1" />
+  </global_params>
+</dds_core>
+
+
