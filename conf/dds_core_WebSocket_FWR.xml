@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dds_core>
+  <application>
+    <name>WebSocket</name>
+    <rank>8080</rank>
+    <factory>Utility</factory>
+    <log_level>10</log_level>
+    <code type="vs.com.maverse.dds.util.websocket.EntryPoint, DDSApp_WebSocket" is_singleton="1">
+    	<property name="$IncludeChildren" value="" />
+    </code>
+  </application>
+  <database>
+    <item enabled="0">
+      <id>StatusManager</id>
+      <account>aptest</account>
+      <password>
+      </password>
+      <url>Data Source=ORCL;Persist Security Info=True;Pooling=False</url>
+      <params>
+        <item action="add" key="refresh_sec" value="10" />
+      </params>
+    </item>
+  </database>
+  <global_params>
+    
+    <!--client information. None, Deflate-->
+    <item action="add" key="client.CompressionMethod" value="./conf/DDSApp_WebSocket/Public" />
+    
+    <!--HTTP server information-->
+    <item action="add" key="HTTP.DocumentRootPath" value="./conf/DDSApp_WebSocket/Public" />
+    
+    <!--server service list  -->
+    <item action="add" key="service.list" type="jason.DataTable" value="{&quot;WebSocket.endpoint.list&quot;:[
+{&quot;Path&quot;:&quot;/DGWFactoryWarRoom/v1&quot;,&quot;ServiceType&quot;:&quot;vs.com.maverse.dds.util.websocket.service.DGWFactoryWarRoomService, DDSApp_WebSocket&quot;},
+{&quot;Path&quot;:&quot;/Laputa&quot;,&quot;ServiceType&quot;:&quot;vs.com.maverse.dds.util.websocket.service.LaputaService, DDSApp_WebSocket&quot;},
+{&quot;Path&quot;:&quot;/Echo&quot;,&quot;ServiceType&quot;:&quot;vs.com.maverse.dds.util.websocket.service.EchoService, DDSApp_WebSocket&quot;},
+{&quot;Path&quot;:&quot;/Chat&quot;,&quot;ServiceType&quot;:&quot;vs.com.maverse.dds.util.websocket.service.ChatService, DDSApp_WebSocket&quot;}
+]}"/>
+
+    <!--server bind information.-->
+    <!-- ws://127.0.0.1:8080/, http://127.0.0.1:4649 -->
+    <!-- http://10.40.61.115:4649/ -->
+    <item action="add" key="bind.list" value="http://10.40.81.76:4649" />
+
+    <!-- WEBSOCKER, HTTP -->
+    <item action="add" key="ServerType" value="HTTP" />
+
+    <!-- system -->
+    <item action="add" key="IsDebug" value="1" />
+    
+  </global_params>
+  <usage>
+  	1. ws://127.0.0.1:8080/Echo
+    2. http://127.0.0.1:4649/index.html
+  </usage>
+</dds_core>
